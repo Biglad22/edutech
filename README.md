@@ -48,7 +48,7 @@ npm install
 
 ### 4. Mockoon Server Setup
 - Download and install Mockoon.
-- Import the API collection (mockoon-file.json) provided in the project (or create your own mock APIs).
+- Import the API collection (mock-api.json) provided in the project (in th mockoon folder).
 - Start the Mockoon server locally on http://localhost:3001.
 
 ### 5. Run the Application
