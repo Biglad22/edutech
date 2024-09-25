@@ -1,0 +1,158 @@
+{
+  "uuid": "f8abd8db-a2cb-4aad-a67b-9ce982e09064",
+  "lastMigration": 32,
+  "name": "Edtech Mock API",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3001,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "74be4775-7f2f-475c-8d8c-1c53c8d8705b",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/course",
+      "responses": [
+        {
+          "uuid": "d1a7acb2-b5bf-4ac3-ba43-e4dc49cf678d",
+          "body": "{\r\n  \"courseId\": \"1\",\r\n  \"title\": \"Introduction to Calculus\",\r\n  \"field\": \"Mathematics\",\r\n  \"instructor\": {\r\n    \"name\": \"Dr. John Smith\",\r\n    \"image\": \"@/assets/testImg.jpg\",\r\n    \"role\": \"Professor of Mathematics\"\r\n  },\r\n  \"description\": \"This course covers the fundamentals of calculus, including limits, derivatives, and integrals. It is designed for beginners and advanced students.\",\r\n  \"rating\": 4.5\r\n}\r\n",
+          "latency": 200,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "e9e806a3-63ea-4e0f-a951-c1c4a69d0907",
+      "type": "http",
+      "documentation": "",
+      "method": "get",
+      "endpoint": "api/course/modules",
+      "responses": [
+        {
+          "uuid": "b0874237-3279-47f5-b363-c3eee73072b7",
+          "body": "{\r\n  \"courseId\": \"1\",\r\n  \"modules\": [\r\n    {\r\n      \"moduleId\": \"101\",\r\n      \"moduleTitle\": \"Introduction to Limits\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Learn about the concept of limits and their importance in calculus.\",\r\n      \"isCompleted\": true,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"102\",\r\n      \"moduleTitle\": \"Understanding Derivatives\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Explore the concept of derivatives and their applications.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"103\",\r\n      \"moduleTitle\": \"Introduction to Integrals\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Get a basic understanding of integrals and their use in calculus.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"104\",\r\n      \"moduleTitle\": \"The Fundamental Theorem of Calculus\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Understand the fundamental theorem of calculus, which links derivatives and integrals.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"105\",\r\n      \"moduleTitle\": \"Techniques of Differentiation\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Learn various techniques for differentiating complex functions.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"106\",\r\n      \"moduleTitle\": \"Applications of Derivatives\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Explore real-world applications of derivatives, such as optimization and motion analysis.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"107\",\r\n      \"moduleTitle\": \"Techniques of Integration\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Learn various techniques for integrating complex functions.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"108\",\r\n      \"moduleTitle\": \"Applications of Integrals\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Explore real-world applications of integrals, such as calculating areas and volumes.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"109\",\r\n      \"moduleTitle\": \"Sequences and Series\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"Understand the basics of sequences and series, including convergence and divergence.\",\r\n      \"isCompleted\": true,\r\n      \"isBookmarked\": false\r\n    },\r\n    {\r\n      \"moduleId\": \"110\",\r\n      \"moduleTitle\": \"Multivariable Calculus\",\r\n      \"video\": \"@/assets/testvideo.mp4\",\r\n      \"description\": \"An introduction to calculus with functions of several variables, partial derivatives, and multiple integrals.\",\r\n      \"isCompleted\": false,\r\n      \"isBookmarked\": false\r\n    }\r\n  ]\r\n}\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    },
+    {
+      "uuid": "ba6efa57-7b2d-4bac-ad63-af338b850f76",
+      "type": "http",
+      "documentation": "",
+      "method": "post",
+      "endpoint": "api/course/rate",
+      "responses": [
+        {
+          "uuid": "33a4e15f-2a39-47f0-a3cb-d15b71d0cbc7",
+          "body": "{\r\n  \"message\": \"Rating submitted successfully\",\r\n  \"courseId\": \"1\",\r\n  \"newRating\": 4.6\r\n}\r\n",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "",
+          "headers": [],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": null
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "74be4775-7f2f-475c-8d8c-1c53c8d8705b"
+    },
+    {
+      "type": "route",
+      "uuid": "e9e806a3-63ea-4e0f-a951-c1c4a69d0907"
+    },
+    {
+      "type": "route",
+      "uuid": "ba6efa57-7b2d-4bac-ad63-af338b850f76"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

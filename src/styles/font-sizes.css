@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Base font size */
+html {
+  font-size: 14px; 
+  font-family: "Open Sans", sans-serif;
+}
+
+/* Responsive font sizes using clamp() */
+h1 {
+  font-size: clamp(2.5rem, 2rem + 2vw, 3rem); /* Large header */
+}
+
+h2 {
+  font-size: clamp(2rem, 1.75rem + 1.5vw, 2.75rem); /* Medium header */
+}
+
+h3 {
+  font-size: clamp(1.75rem, 1.5rem + 1.25vw, 2.5rem); /* Sub-header */
+}
+
+h4 {
+  font-size: clamp(1.5rem, 1.25rem + 1vw, 2.25rem); /* Smaller sub-header */
+}
+
+h5 {
+  font-size: clamp(1.25rem, 1rem + 0.75vw, 2rem); /* Section header */
+}
+
+h6 {
+  font-size: clamp(1.125rem, 0.875rem + 0.5vw, 1.75rem); /* Sub-section header */
+}
+
+p, a, li, button {
+  font-size: clamp(1rem, 0.875rem + 0.5vw, 1.25rem); /* Standard paragraph */
+}
+
+small {
+  font-size: clamp(0.875rem, 0.75rem + 0.25vw, 1rem); /* Smaller text */
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+}
+
